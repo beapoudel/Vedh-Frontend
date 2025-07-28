@@ -108,7 +108,7 @@ function App(){
        <div className="topiclab" > Topic: <input value={topic} className="topic" onChange={(event)=>settopic(event.target.value)} type="text"/></div>
        <div className="numton">
         <div className="num"> 
-         Number of question: <input value={number}  onChange={(event)=>setno(event.target.value)} type="number"/>
+         No.of MCQ: <input value={number}  onChange={(event)=>setno(event.target.value)} type="number"/>
          </div>
          <div className="ton">
          Tone: <input value={tone} onChange={(event)=>settone(event.target.value)} type="text"/>
@@ -120,7 +120,7 @@ function App(){
          }
          {
           !pending &&
-          <h2 style={{marginLeft:'35%'}} className="generate">Your Trial has finish</h2>
+          <h2  className="trial">Your Trial has finish</h2>
          }
       </header>
      <div>
